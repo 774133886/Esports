@@ -459,7 +459,7 @@ input:checked+.bg-mengban.absolute_full,input:checked+.bg-mengban.fixed_full{dis
 .radius0{ border-radius: 0;}
 .radius2{ border-radius: 2px;}
 .radius3{ border-radius: 3px;}
-.radius4{ border-radius: 4px;}
+.radius4{ border-radius: 4px !important;}
 .radius5{ border-radius: 5px;}
 .radius6{ border-radius: 6px;}
 .radius7{ border-radius: 7px;}
@@ -891,3 +891,172 @@ header.header >*:nth-child(3){width: 0.8rem;text-align: right;padding-right: 0.2
 [change_nav].bottom>*>*{display: inline-block;}
 [change_nav].bottom>*.active>*:before{border-top:2px solid transparent;border-top-color:initial ;width: 90%;position: absolute;bottom: 0px;left:50%;transform: translateX(-50%);display: inline-block;content: "";}
 
+/* 通用头部 */
+body{
+    min-width: 1200px;
+}
+.curHeader{
+    background-color: #4C525C;
+    height: 80px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    overflow-x: visible !important;
+}
+.container .logo{
+    float: left;
+    margin-top: 18px;
+}
+.userInfo{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.userInfo img,.userInfo span{
+    display: block;
+    float: left;
+}
+.icon_inform{
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.userHead{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.userInfo span{
+    margin-top: 10px;
+    color: #fff;
+    margin-right: 6px;
+}
+.icon_down{
+    margin-top: 17px;
+}
+.userInfo a button{
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    background: #6C737F;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    display: none;
+}
+.userInfo a button:hover{
+    background: #3F4754;
+}
+.userInfo a:hover button{
+    display: block;
+}
+/* 状态通用效果 */
+/* 按钮 */
+.button1{
+    background: -webkit-linear-gradient(left, #5FE7FF , #31CAFF);
+    background: -o-linear-gradient(right, #5FE7FF, #31CAFF); 
+    background: -moz-linear-gradient(right, #5FE7FF, #31CAFF); 
+    background: linear-gradient(to right, #5FE7FF , #31CAFF); 
+    
+}
+.button1:hover{
+    background: #31CAFF;
+}
+.button1:active{
+    background: #0EA6DB;
+}
+.button2{
+    /* -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    transition: all linear .2s; */
+    background: #31CAFF;
+}
+.button2:hover{
+    background: #69D8FF;
+}
+.button2:active{
+    background: #0EA6DB;
+}
+.button3{
+    /* -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    transition: all linear .2s; */
+    background: #FC3266;
+}
+.button3:hover{
+    background: #FF5C86;
+}
+.button3:active{
+    background: #D12C57;
+}
+/* 搜索 */
+.searchInput{
+    border: 2px solid #4C525C !important;
+}
+.searchInput:hover{
+    border: 2px solid #4DA0BD !important;
+}
+.searchInput:focus{
+    border: 2px solid #31CAFF !important;
+}
+.searchBtn{
+    background: #4C525C;
+}
+.searchBtn:hover{
+    background: #606875;
+}
+.searchBtn:active{
+    background: #909CAF;
+}
+/* 背景效果 */
+.bg_block{
+    background: #4C525C;
+}
+.bg_block:hover{
+    background: #3F4754;
+}
+.bg_block:active{
+    background: #5C6370;
+}
+/* input */
+.curInput{
+    border: 1px solid #999999 !important;
+}
+.curInput:hover{
+    border: 1px solid #B8EDFF !important;
+}
+.curInput:focus{
+    border: 1px solid #31CAFF !important;
+}
+/* 模拟下拉 */
+.selectBox{
+    position: relative;
+}
+.selectBox ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #6C737F;
+}
+.selectBox ul li{
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.selectBox ul li.active{
+    background: #909CAF !important;
+}
+.selectBox ul li:hover{
+    background: #606875;
+}
+.selectBox ul li:active{
+    background: #909CAF;
+}

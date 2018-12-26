@@ -17,20 +17,64 @@
 		<link rel="stylesheet" type="text/css" href="../css/ly.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/pyf.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/ql.css"/>
+		<style>
+			body{background: rgba(48, 56, 67, 1)}
+		</style>
 	</head>
 
 	<body>
-		<div class="main">
-
+		<div id="app">
+			<!-- 头部 -->
+			<curheader></curheader>
+			
+			<!-- 按钮 -->
+			<div class="pad30">
+				<button class="button1 creatBtn pointer"><img src="../images/add.png" alt="">创建赛事</button>
+				<button class="button2 addBtn pointer">添加</button>
+				<button class="button3 creatBtn font20 redius4 pointer">立即创建</button>
+			</div>
+			<!-- 搜索 -->
+			<div class="pad30">
+				<form class="searchBox clearfix font0">
+					<input class="searchInput placeholder999 font16 p_both20" placeholder="搜索赛事" type="search">
+					<button type="button" class="searchBtn"><img src="../images/sousuo.png" alt=""></button>
+				</form>
+			</div>
+			<!-- 背景效果 -->
+			<div class="pad30">
+				<div class="bg_block" style="height: 60px"></div>
+			</div>
+			<!-- input -->
+			<div class="pad30">
+				<input class="curInput" type="text">
+			</div>
+			<!-- 下拉 -->
+			<div class="pad30">
+				<!-- <div class="selectBox">
+					<input type="text" value="123">
+					<ul>
+						<li>111</li>
+						<li class="active">222</li>
+						<li>333</li>
+						<li>444</li>
+					</ul>
+				</div> -->
+				<select-ui :list="list">
+					<input type="text" value="123">
+				</select-ui>
+			</div>
 		</div>
 	</body>
 	<script type="text/javascript" src="../lib/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="../lib/vue.js"></script>
 	<script type="text/javascript" src="../lib/global.js"></script>
 	<script>
-		
-
-		
+		var app = new Vue({
+			el: "#app",
+			data: {
+				list: [111,222,333,444,555]
+			}
+		})
 
 	</script>
 
