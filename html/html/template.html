@@ -46,7 +46,7 @@
 			</div>
 			<!-- input -->
 			<div class="pad30">
-				<input class="curInput" type="text">
+				<input class="curInput placeholder999" type="text" placeholder="请输入">
 			</div>
 			<!-- 下拉 -->
 			<div class="pad30">
@@ -59,9 +59,9 @@
 						<li>444</li>
 					</ul>
 				</div> -->
-				<select-ui :list="list">
-					<input type="text" value="123">
-				</select-ui>
+				<select-ui :list="list" v-on:enlarge-text="value = $event"></select-ui>
+				<br>
+				<select-ui :list="list" v-on:enlarge-text="value2 = $event"></select-ui>
 			</div>
 		</div>
 	</body>
@@ -72,7 +72,17 @@
 		var app = new Vue({
 			el: "#app",
 			data: {
-				list: [111,222,333,444,555]
+				value: '',
+				value2: '',
+				list: [111,222,333,444,555,666,777,888,999]
+			},
+			watch:{
+				value: function(){
+					console.log(this.value)
+				},
+				value2: function(){
+					console.log(this.value2)
+				}
 			}
 		})
 

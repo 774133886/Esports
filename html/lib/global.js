@@ -27,16 +27,31 @@ if (typeof(Vue)!=='undefined') {
 
     // 下拉
     Vue.component('select-ui',{
+        data: function(){
+            return {
+                option: ''
+            }
+        },
         props: ['list'],
         template: '<div class="selectBox">'+
-                    '<slot></slot>'+
+                    '<input  @focus="openList($event)" @blur="closeList($event)" type="text" readonly="readonly" v-model="option" placeholder="请选择">'+
                     '<ul>'+
-                        '<li @click="changeSelect()" v-for="item in list">{{item}}</li>'+
+                        '<li @click="changeSelect(item)" v-for="item in list">{{item}}</li>'+
                     '</ul>'+
+                    '<img class="icon-select" src="../images/triangle.png"/>'+
                 '</div>',
         methods: {
-            changeSelect: function () {
-                
+            changeSelect: function (item) {
+                this.option = item
+                this.$emit('enlarge-text', item)
+            },
+            openList: function (e) {
+                $(e.target).next('ul').fadeIn(200);
+                $(e.target).parent().find('.icon-select').addClass('selected')
+            },
+            closeList: function(e){
+                $(e.target).next('ul').fadeOut(200);
+                $(e.target).parent().find('.icon-select').removeClass('selected')
             }
         }
     })
