@@ -956,6 +956,7 @@ body{
 /* 状态通用效果 */
 /* 按钮 */
 .button1{
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#5FE7FF, endColorstr=#31CAFF);
     background: -webkit-linear-gradient(left, #5FE7FF , #31CAFF);
     background: -o-linear-gradient(right, #5FE7FF, #31CAFF); 
     background: -moz-linear-gradient(right, #5FE7FF, #31CAFF); 
@@ -1098,3 +1099,4 @@ body{
 .selectBox ul li:active{
     background: #909CAF;
 }
+.inp {color: #999;}

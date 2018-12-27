@@ -36,7 +36,7 @@
 			<!-- 搜索 -->
 			<div class="pad30">
 				<form class="searchBox clearfix font0">
-					<input class="searchInput placeholder999 font16 p_both20" placeholder="搜索赛事" type="search">
+					<input class="searchInput placeholder999 font16 p_both20" datavalue="搜索赛事" placeholder="搜索赛事" type="search">
 					<button type="button" class="searchBtn"><img src="../images/sousuo.png" alt=""></button>
 				</form>
 			</div>
@@ -46,7 +46,7 @@
 			</div>
 			<!-- input -->
 			<div class="pad30">
-				<input class="curInput placeholder999" type="text" placeholder="请输入">
+				<input class="curInput placeholder999" type="text" datavalue="请输入" placeholder="请输入">
 			</div>
 			<!-- 下拉 -->
 			<div class="pad30">
@@ -83,6 +83,12 @@
 				value2: function(){
 					console.log(this.value2)
 				}
+			},
+			created: function () {
+				placeholder('input')
+			},
+			updated: function () { 
+				
 			}
 		})
 

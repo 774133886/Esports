@@ -34,7 +34,7 @@ if (typeof(Vue)!=='undefined') {
         },
         props: ['list'],
         template: '<div class="selectBox">'+
-                    '<input  @focus="openList($event)" @blur="closeList($event)" type="text" readonly="readonly" v-model="option" placeholder="请选择">'+
+                    '<input class="placeholder999 selectInput"  @focus="openList($event)" @blur="closeList($event)" type="text" readonly="readonly" v-model="option" datavalue="请选择" placeholder="请选择">'+
                     '<ul>'+
                         '<li @click="changeSelect(item)" v-for="item in list">{{item}}</li>'+
                     '</ul>'+
@@ -55,4 +55,29 @@ if (typeof(Vue)!=='undefined') {
             }
         }
     })
+}
+
+// 兼容placeholder
+var browser=navigator.appName 
+var b_version=navigator.appVersion 
+var version=b_version.split(";"); 
+var trim_Version=version[1].replace(/[ ]/g,""); 
+function placeholder(target){
+	if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0") {
+		setTimeout(function(){
+			$(target).each(function(){
+				$(this).val($(this).attr("datavalue")).addClass("inp");
+			    $(this).focus(function() {
+			        if($(this).val() == $(this).attr("datavalue") && !$(this).hasClass('selectInput')) {
+			            $(this).val("").removeClass("inp");
+			        }
+			    })
+			    $(this).blur(function(){
+			        if(($(this).val() == "" || $(this).val() == $(this).attr("datavalue")) && !$(this).hasClass('selectInput')) {
+			            $(this).val($(this).attr("datavalue")).addClass("inp");
+			        }
+			    })
+			})
+		},0)
+	}
 }

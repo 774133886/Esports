@@ -1,0 +1,8 @@
+https://blog.csdn.net/westos_linux/article/details/78968012
+https://www.cnblogs.com/xxt19970908/p/6685777.html
+https://jingyan.baidu.com/article/b0b63dbf0c0ac04a49307078.html
+
+第一步，安装java,
+第二步，安装maven
+第二步，安装idea,配置maven
+第三步，idea导入pom项目，导入时配置java 1.8
