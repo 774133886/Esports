@@ -22,9 +22,11 @@
 	width: calc(100% - 66px);
 	height: 52px;
 	vertical-align: middle;
+	color: #fff;
 }
 .searchBox button{
 	width: 66px;
 	height: 52px;
 	vertical-align: middle;
+	cursor: pointer;
 }

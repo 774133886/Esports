@@ -135,9 +135,9 @@ input:checked+.bg-mengban.absolute_full,input:checked+.bg-mengban.fixed_full{dis
 .bg-red{background-color: #FF0000 !important}
 .bg-orange{background-color: #f8b03f !important}
 .bg-yellow{background-color: #f5bc24 !important}
-.bg-green{background-color: #008000 !important;}
+.bg-green{background-color: #46D8B8 !important;}
 .bg-lightgreen{background-color: #90EE90 !important;}
-.bg-blue{background-color: #0a669b !important;}
+.bg-blue{background-color: #31CAFF !important;}
 .bg-purple{background-color: #800080 !important;}
 .bg-mengban{background-color:rgba(68,68,68,0.6);}
 

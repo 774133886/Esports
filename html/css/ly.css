@@ -114,3 +114,60 @@
 .poRe{
 	position: relative;
 }
+
+
+
+.indexSearchArea{
+	margin-top: 75px;
+	width: 100%;
+}
+.indexSearchArea .searchBox{
+	width: calc(100% - 186px);
+}
+.indexallGame{
+	width: 186px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	cursor: pointer;
+}
+.indexCon{
+	margin-top: 80px;
+	width: 100%;
+	height: auto;
+}
+.indexGameList{
+	width: 100%;
+	height: 100px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.iglTitle{
+	width: 665px;
+	height: 100px;
+	padding: 20px 40px;
+}
+.iglNum{
+	width: 200px;
+	line-height: 100px;
+	height: 100px;
+}
+.iglDate{
+	width: 200px;
+	line-height: 100px;
+	height: 100px;
+}
+.indexGameStatus{
+	width: 60px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	color: #fff;
+	border-radius: 2px;
+	position: absolute;
+	right: 12px;
+	top: 12px;
+}
+.m-b-2{
+	margin-bottom: 2px;
+}

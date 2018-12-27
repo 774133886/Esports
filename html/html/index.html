@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>电竞E族</title>
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+		<!--分享使用-->
+		<meta itemprop="name" content="" />
+		<meta itemprop="description" name="description" content="" />
+		<meta itemprop="image" content="img_url" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../css/ly.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pyf.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/ql.css"/>
+		<style>
+			body{background: rgba(48, 56, 67, 1)}
+		</style>
+	</head>
+
+	<body>
+		<div id="app">
+			<!-- 头部 -->
+			<curheader></curheader>
+			<div class="container p-t-50">
+				<div class="clearfix">
+					<h1 class="color-fff fl font40">您的赛事</h1>
+					<button class="button1 creatBtn pointer fr"><img src="../images/add.png" alt="">创建赛事</button>
+				</div>
+				<div class="indexSearchArea clearfix">
+					<form class="searchBox fl clearfix font0">
+						<input class="searchInput placeholder999 font16 p_both20" datavalue="搜索赛事" placeholder="搜索赛事" type="search">
+						<button type="button" class="searchBtn"><img src="../images/sousuo.png" alt=""></button>
+					</form>
+					<div class="color-fff indexallGame font18 fr">
+						<i>全部赛事</i> <span class="sanjiao-bottom m-b-2 color-fff"></span>
+						
+					</div>
+				</div>
+				<div class="indexCon">
+					<div class="indexGameList relative clearfix bg_block">
+						<div class="fl iglTitle">
+							<h3 class="only_line font20 color-fff">电竞E族英雄联盟线上挑战赛</h3>
+							<p class="font16 m-t-5 color-999">单败赛制</p>
+						</div>
+						<div class="fl iglNum">
+							<img class="vertical_mid" src="../images/people.png"/>
+							<span class="vertical_mid m-l-15 font18 color-fff">0/32</span>
+						</div>
+						<div class="fl iglDate">
+							<i class="font16 color-999">2018/12/13  15:00:00</i>
+						</div>
+						<span class="indexGameStatus bg-blue">未开始</span>
+					</div>
+					<div class="indexGameList relative clearfix bg_block">
+						<div class="fl iglTitle">
+							<h3 class="only_line font20 color-fff">电竞E族英雄联盟线上挑战赛</h3>
+							<p class="font16 m-t-5 color-999">单败赛制</p>
+						</div>
+						<div class="fl iglNum">
+							<img class="vertical_mid" src="../images/people.png"/>
+							<span class="vertical_mid m-l-15 font18 color-fff">0/32</span>
+						</div>
+						<div class="fl iglDate">
+							<i class="font16 color-999">2018/12/13  15:00:00</i>
+						</div>
+						<span class="indexGameStatus bg-green">进行中</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../lib/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="../lib/vue.js"></script>
+	<script type="text/javascript" src="../lib/global.js"></script>
+	<script>
+		var app = new Vue({
+			el: "#app",
+			data: {
+				value: '',
+				value2: '',
+				list: [111,222,333,444,555,666,777,888,999]
+			},
+			watch:{
+				value: function(){
+					console.log(this.value)
+				},
+				value2: function(){
+					console.log(this.value2)
+				}
+			},
+			created: function () {
+				placeholder('input')
+			},
+			updated: function () { 
+				
+			}
+		})
+
+	</script>
+
+</html>
