@@ -136,11 +136,16 @@
 	width: 100%;
 	height: auto;
 }
+.indexGameLists{
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
 .indexGameList{
 	width: 100%;
 	height: 100px;
 	border-radius: 4px;
-	margin-bottom: 10px;
+	cursor: pointer;
 }
 .iglTitle{
 	width: 665px;
@@ -167,7 +172,97 @@
 	position: absolute;
 	right: 12px;
 	top: 12px;
+	display: inline-block;
 }
 .m-b-2{
 	margin-bottom: 2px;
+}
+.indexLineBg{
+	display: inline-block;
+	width: 220px;
+	height: 8px;
+	border-radius: 4px;
+	background-color: #999;
+}
+.indexLine{
+	display: inline-block;
+	height: 8px;
+	border-radius: 4px;
+	position: absolute;
+	left: 0;
+	top:0;
+	background-image: linear-gradient(-90deg, #F7304E 3%, #F25778 100%);
+}
+.indexdeleBtn{
+	width: 60px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	color: #fff;
+	border-radius: 2px;
+	border: 1px solid #999;
+	position: absolute;
+	font-size: 12px;
+	right: 12px;
+	display: none;
+	bottom: 12px;
+}
+.indexGameList:hover .indexdeleBtn{
+	display: block !important; 
+}
+.idxdeleArea{
+	text-align: center;
+	width: 100%;
+	height: 90px;
+	padding-top: 20px;
+	display: none;
+}
+.indexcfmBtn{
+	width: 60px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	color: #fff;
+	border-radius: 2px;
+	font-size: 12px;
+	display: inline-block;
+	border: 1px solid #999;
+	cursor: pointer;
+}
+.indexcalBtn{
+	width: 60px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 2px;
+	border: 1px solid #31CAFF;
+	background: #31CAFF;
+	display: inline-block;
+	cursor: pointer;
+}
+.allGameFilter{
+	width: 100px;
+	height: auto;
+	background: #6C737F;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	display: none;
+}
+.allGameFilter>li{
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	z-index: 1;
+	
+}
+.indexallGame:hover>ul.allGameFilter{
+	display: block !important;
+}
+.allGameFilter>li:hover{
+	background: #909CAF;
 }
