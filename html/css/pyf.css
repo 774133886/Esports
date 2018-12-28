@@ -30,3 +30,94 @@
 	vertical-align: middle;
 	cursor: pointer;
 }
+/* 创建赛事 */
+.creatCurForm{
+	margin-top: 15px;
+	padding: 40px 30px;
+	background-color: #4C525C;
+	border-radius: 4px;
+}
+.red::before{
+	content: '*';
+	color: #FC3266;
+	position: absolute;
+	top: 4px;
+	left: -15px;
+}
+.l-h-32{
+	line-height: 32px;
+}
+.wid420{
+	width: 420px;
+}
+.wid160{
+	width: 160px !important;
+}
+.wid70px{
+	width: 64px;
+}
+.m-r-40{
+	margin-right: 40px;
+}
+.bg-input{
+	background: #6C737F;
+}
+.uploadImgBox{
+	position: relative;
+}
+.uploadImgBox input{
+	display: none;
+}
+.uploadImgBox img{
+	display: block;
+}
+.uploadImgBox p{
+	background: #6C737F;
+	position: absolute;
+	bottom: 0;
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+.checkBox{
+	line-height: 32px;
+	font-size: 0;
+}
+.checkBox input+i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../images/radio.png) no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: -2px;
+	margin-right: 10px;
+}
+.checkBox input:checked+i{
+	background: url(../images/radio-checked.png) no-repeat;
+}
+.m-l-80{
+	margin-left: 80px;
+}
+.wid260{
+	width: 260px;
+}
+.color-3f3f3f{
+	color: #3F3F3F;
+}
+.tetleNo{
+	margin-left: 100px;
+}
+.moreAdd{
+	font-size: 16px;
+	color: #31CAFF !important;
+}
+.wid80px{
+	width: 80px;
+}
+.teamCtt{
+	background: #5F6877;
+	padding: 20px 30px;
+	margin: 30px -30px 0 -30px;
+}

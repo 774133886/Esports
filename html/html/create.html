@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>电竞E族</title>
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+		<!--分享使用-->
+		<meta itemprop="name" content="" />
+		<meta itemprop="description" name="description" content="" />
+		<meta itemprop="image" content="img_url" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../css/ly.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pyf.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/ql.css"/>
+		<style>
+			body{background: rgba(48, 56, 67, 1)}
+		</style>
+	</head>
+
+	<body>
+		<div id="app">
+			<!-- 头部 -->
+			<curheader></curheader>
+			<div class="container p-t-50">
+				<div class="clearfix">
+					<h1 class="color-fff fl font40">创建赛事</h1>
+				</div>
+				<!-- 基础信息 -->
+				<div class="">
+					<h3 class="font20 m-t-40 color-fff">基础信息</h3>
+					<div class="creatCurForm clearfix">
+						<div class="curGroup clearfix fl">
+							<div class="curInputBox clearfix">
+								<span class="fl wid70px text-right font16 m-r-20 m-l-15 l-h-32 color-fff red relative">赛事名称</span>
+								<input class="curInput bg-input placeholder999 fl wid420 color-fff" type="text" datavalue="请输入赛事名称" placeholder="请输入赛事名称">
+							</div>
+							<div class="curInputBox clearfix m-t-40">
+								<span class="fl wid70px text-right font16 m-r-20 m-l-15 l-h-32 color-fff red relative">上传海报</span>
+								<div class="wid420 fl">
+									<label class="uploadImgBox pointer">
+										<input type="file">
+										<img src="../images/addImg.png" alt="">
+										<p class="pointer">删除</p>
+									</label>
+									<p class="font12 color-999">图片大小不超过5MB,图片格式为JPG、PNG、BMP</p>
+									<P class="font12 color-999">图片比例为16:9</P>
+								</div>
+							</div>
+							<div class="curInputBox clearfix m-t-40">
+								<span class="fl wid70px text-right font16 m-r-20 m-l-15 l-h-32 color-fff relative">赛事介绍</span>
+								<!-- 富文本 -->
+								<div>
+										<script type="text/plain" id="editor" style="width:1000px;height:240px;">
+											
+										</script>
+								</div>
+							</div>
+						</div>
+						<div class="fr">
+							<div class="curGroup clearfix">
+								<div class="fl m-r-30">
+									<span class="fl text-right font16 m-r-20 l-h-32 color-fff red relative">报名开始时间</span>
+									<div class="selectBox fl">
+										<input class="curInput bg-input placeholder999 wid160 color-fff font14" type="text" readonly="readonly" datavalue="选择日期" placeholder="选择日期" id="d4311" name="start_time" autocomplete="off" onclick="WdatePicker({el:this,maxDate:'#F{$dp.$D(\'d4312\')}',dateFmt:'yyyy/MM/dd HH:mm'})">
+										<img class="icon-select" src="../images/triangle.png"/>
+									</div>
+								</div>
+								<div class="fl">
+									<span class="fl text-right font16 m-r-20 l-h-32 color-fff red relative">报名结束时间</span>
+									<div class="selectBox fl">
+										<input class="curInput bg-input placeholder999 wid160 color-fff font14" type="text" readonly="readonly" datavalue="选择日期" placeholder="选择日期" id="d4312" name="end_time" autocomplete="off" onclick="WdatePicker({el:this,minDate:'#F{$dp.$D(\'d4311\')}',dateFmt:'yyyy/MM/dd HH:mm'})">
+										<img class="icon-select" src="../images/triangle.png"/>
+									</div>
+								</div>
+							</div>
+							<div class="curGroup clearfix m-t-40">
+								<div class="fl m-r-30">
+									<span class="fl text-right font16 m-r-20 l-h-32 color-fff red relative">比赛开始时间</span>
+									<div class="selectBox fl">
+										<input class="curInput bg-input placeholder999 wid160 color-fff font14" type="text" readonly="readonly" datavalue="选择日期" placeholder="选择日期" id="d4313" name="start_time1" autocomplete="off" onclick="WdatePicker({el:this,maxDate:'#F{$dp.$D(\'d4314\')}',dateFmt:'yyyy/MM/dd HH:mm'})">
+										<img class="icon-select" src="../images/triangle.png"/>
+									</div>
+								</div>
+								<div class="fl">
+									<span class="fl text-right font16 m-r-20 l-h-32 color-fff red relative">比赛结束时间</span>
+									<div class="selectBox fl">
+										<input class="curInput bg-input placeholder999 wid160 color-fff font14" type="text" readonly="readonly" datavalue="选择日期" placeholder="选择日期" id="d4314" name="end_time1" autocomplete="off" onclick="WdatePicker({el:this,minDate:'#F{$dp.$D(\'d4313\')}',dateFmt:'yyyy/MM/dd HH:mm'})">
+										<img class="icon-select" src="../images/triangle.png"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 赛事/游戏信息 -->
+				<div class="">
+					<h3 class="font20 m-t-40 color-fff">赛事/游戏信息</h3>
+					<div class="creatCurForm clearfix">
+						<div class="curInputBox clearfix">
+							<span class="fl wid70px text-left font16 m-r-20 m-l-15 l-h-32 color-fff red relative">游戏项目</span>
+							<div class="wid260 inline_div fl">
+								<select-ui :list="list1" v-on:enlarge-text="value = $event"></select-ui>
+							</div>
+							<label class="checkBox m-l-80 pointer fl">
+								<input type="checkbox" class="none">
+								<i></i>
+								<span class="font16 color-fff">游戏大厅/服务器选择</span>
+							</label>
+							<!-- 选中显示 -->
+							<div class="wid260 inline_div fl m-l-20">
+								<select-ui :list="list2" v-on:enlarge-text="value = $event"></select-ui>
+							</div>
+						</div>
+						<div class="curInputBox clearfix m-t-40">
+							<span class="fl wid70px text-left font16 m-r-20 m-l-15 l-h-32 color-fff red relative">体制选择</span>
+							<div class="wid260 inline_div fl">
+								<select-ui :list="list" v-on:enlarge-text="value = $event"></select-ui>
+							</div>
+							<!-- 单人solo -->
+							<!-- <div class="m-l-80 clearfix fl">
+								<div class="curInputBox clearfix fl m-r-40">
+									<span class="fl wid70px text-right font16 m-r-20 m-l-15 l-h-32 color-fff red relative">人数上限</span>
+									<input class="curInput bg-input placeholder999 fl wid80px color-fff" type="text" datavalue="" placeholder="">
+									<span class="fl m-l-10 l-h-32 color-fff">人</span>
+								</div>
+								<div class="curInputBox clearfix fl">
+									<span class="fl wid70px text-right font16 m-r-20 m-l-15 l-h-32 color-fff red relative">人数下限</span>
+									<input class="curInput bg-input placeholder999 fl wid80px color-fff" type="text" datavalue="" placeholder="">
+									<span class="fl m-l-10 l-h-32 color-fff">人</span>
+								</div>
+							</div> -->
+							<!-- 团队竞技赛 -->
+							<div class="m-l-80 clearfix fl">
+								<div class="curInputBox clearfix fl m-r-40">
+									<span class="fl wid70px text-right font16 m-r-20 m-l-15 l-h-32 color-fff red relative">团队上限</span>
+									<input class="curInput bg-input placeholder999 fl wid80px color-fff" type="text" datavalue="" placeholder="">
+									<span class="fl m-l-10 l-h-32 color-fff">队</span>
+								</div>
+								<div class="curInputBox clearfix fl">
+									<span class="fl wid70px text-right font16 m-r-20 m-l-15 l-h-32 color-fff red relative">团队下限</span>
+									<input class="curInput bg-input placeholder999 fl wid80px color-fff" type="text" datavalue="" placeholder="">
+									<span class="fl m-l-10 l-h-32 color-fff">队</span>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 团队竞技赛 -->
+						<div class="teamCtt m-t-30">
+							<div class="clearfix">
+								<div class="curInputBox clearfix fl">
+									<span class="fl wid70px text-left font16 m-r-20 m-l-15 l-h-32 color-fff red relative">战队人数</span>
+									<div class="wid260 inline_div fl">
+										<select-ui :list="list" v-on:enlarge-text="value = $event"></select-ui>
+									</div>
+								</div>
+								<div class="curInputBox clearfix fl m-l-80">
+									<span class="fl wid70px text-left font16 m-r-20 m-l-15 l-h-32 color-fff red relative">替补队员</span>
+									<div class="wid260 inline_div fl">
+										<select-ui :list="list" v-on:enlarge-text="value = $event"></select-ui>
+									</div>
+								</div>
+							</div>
+							<div class="m-t-40">
+								<p>
+									<span class="text-left font16 m-l-15 l-h-32 color-fff red relative">战队信息目录</span>
+									<span class="font16 color-3f3f3f">（至少添加一项）</span>
+								</p>
+								
+							</div>
+							
+						</div>
+
+						<div class="curInputBox clearfix m-t-40">
+							<span class="fl wid70px text-left font16 m-r-20 m-l-15 l-h-32 color-fff red relative">类型</span>
+							<label class="checkBox pointer">
+								<input type="radio" name="gameType" class="none">
+								<i></i>
+								<span class="font16 color-fff">单阶段比赛</span>
+							</label>
+							<label class="checkBox m-l-80 pointer">
+								<input type="radio" name="gameType" class="none">
+								<i></i>
+								<span class="font16 color-fff">双阶段比赛</span>
+							</label>
+						</div>
+						<div class="curInputBox clearfix m-t-40">
+							<span class="fl wid70px text-left font16 m-r-20 m-l-15 l-h-32 color-fff red relative">赛制</span>
+							<div class="wid260 inline_div fl">
+								<select-ui :list="list" v-on:enlarge-text="value = $event"></select-ui>
+								<!-- 单败赛显示 -->
+								<label class="checkBox m-t-40 pointer fl">
+									<input type="checkbox" class="none">
+									<i></i>
+									<span class="font16 color-fff">单败赛包括一个第三名争夺战</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 报名 -->
+				<div class="">
+					<h3 class="font20 m-t-40 color-fff">报名费用</h3>
+					<div class="creatCurForm clearfix">
+						<div class="curInputBox clearfix">
+							<span class="fl wid70px text-left font16 m-r-20 m-l-15 l-h-32 color-fff red relative">报名费用</span>
+							<div class="wid260 inline_div fl">
+								<select-ui :list="list" v-on:enlarge-text="value = $event"></select-ui>
+							</div>
+							<label class="checkBox m-l-80 pointer">
+								<input type="checkbox" class="none">
+								<i></i>
+								<span class="font16 color-fff">要求参与者签到</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<!-- 奖励信息 -->
+				<div class="">
+					<h3 class="font20 m-t-40 color-fff">奖励信息</h3>
+					<div class="creatCurForm clearfix">
+						<div class="curInputBox clearfix">
+							<span class="fl wid70px text-left font16 m-r-20 m-l-15 l-h-32 color-fff red relative">总奖金</span>
+							<div class="wid260 inline_div fl">
+								<select-ui :list="list" v-on:enlarge-text="value = $event"></select-ui>
+							</div>
+						</div>
+						<div class="m-t-40">
+							<p>
+								<span class="text-left font16 m-l-15 l-h-32 color-fff red relative">添加具体奖励</span>
+								<span class="font16 color-3f3f3f">（至少添加一项）</span>
+							</p>
+							<div class="curInputBox clearfix tetleNo m-t-20">
+								<input class="curInput bg-input placeholder999 fl wid260 color-fff m-r-40" type="text" datavalue="奖励名词(如：冠军、第一名)" placeholder="奖励名词(如：冠军、第一名)">
+								<input class="curInput bg-input placeholder999 fl wid260 color-fff m-r-20" type="text" datavalue="奖励数值(如：数字、文字)" placeholder="奖励数值(如：数字、文字)">
+								<button class="button2 addBtn pointer fl">添加</button>
+							</div>
+							<div class="tetleNo m-t-10">
+								<a class="moreAdd" href="javascript:;">批量添加 ></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center m-t-40 m-b-30">
+					<button class="button3 creatBtn font20 redius4 pointer">立即创建</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../lib/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="../lib/vue.js"></script>
+	<script language="javascript" type="text/javascript" src="../lib/My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="../lib/global.js"></script>
+	<script>
+		var app = new Vue({
+			el: "#app",
+			data: {
+				value: '',
+				value2: '',
+				list: [111,222,333,444,555,666],
+				list1: ['英雄联盟','王者荣耀','绝地求生','彩虹七号'],
+				list2: ['网一','网二','网三','网四']
+			},
+			watch:{
+				value: function(){
+					console.log(this.value)
+				},
+				value2: function(){
+					console.log(this.value2)
+				}
+			},
+			created: function () {
+				placeholder('input');
+			},
+			updated: function () { 
+				
+			}
+		})
+
+	</script>
+
+</html>
