@@ -1033,10 +1033,17 @@ body{
     padding: 0 10px;
     border: 1px solid #999999 !important;
 }
-.curInput:hover{
+.curTextarea{
+    width: 420px;
+    height: 180px;
+    padding: 10px;
+    border: 1px solid #999999 !important;
+    resize: none;
+}
+.curInput:hover,.curTextarea:hover{
     border: 1px solid #B8EDFF !important;
 }
-.curInput:focus{
+.curInput:focus,.curTextarea:focus{
     border: 1px solid #31CAFF !important;
 }
 /* 模拟下拉 */
