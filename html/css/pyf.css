@@ -189,3 +189,70 @@
 .awardLabel img{
 	margin-top: 10px;
 }
+.m-t-60{
+	margin-top: 60px;
+}
+.peopleHead{
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+}
+.wid300{
+	width: 300px;
+}
+.cur_img{
+	vertical-align: middle;
+	margin-top: -3px;
+}
+.m-r-50{
+	margin-right: 50px;
+}
+.cur_img2{
+	margin-bottom: -2px;
+}
+.color-31CAFF{
+	color: #31CAFF;
+}
+.infoTab{
+	border-bottom: 1px solid #4C525C;
+	margin-top: 50px;
+}
+.infoTab a{
+	float: left;
+	display: block;
+	width: 150px;
+	text-align: center;
+	color: #999;
+	font-size: 20px;
+	line-height: 40px;
+}
+.infoTab a.active{
+	color: #fff;
+	position: relative;
+}
+.infoTab a.active:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 2px solid #31CAFF;
+}
+.infoTab a.lock:after,.infoTab a.locked:after{
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 16px;
+	background: url(../images/lockedno.png) no-repeat;
+	margin-bottom: -1px;
+	margin-left: 4px;
+}
+.infoTab a.lock.active:after{
+	background: url(../images/lockno.png) no-repeat;
+}
+.infoTab a.locked:after{
+	background: url(../images/locked.png) no-repeat;
+}
+.infoTab a.locked.active:after{
+	background: url(../images/lock.png) no-repeat;
+}
