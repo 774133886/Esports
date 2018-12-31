@@ -226,6 +226,9 @@
 	font-size: 20px;
 	line-height: 40px;
 }
+.infoTab a:hover{
+	color: #fff !important;
+}
 .infoTab a.active{
 	color: #fff;
 	position: relative;
@@ -247,12 +250,86 @@
 	margin-bottom: -1px;
 	margin-left: 4px;
 }
-.infoTab a.lock.active:after{
+.infoTab a.lock.active:after,.infoTab a.lock:hover:after{
 	background: url(../images/lockno.png) no-repeat;
 }
 .infoTab a.locked:after{
 	background: url(../images/locked.png) no-repeat;
 }
-.infoTab a.locked.active:after{
+.infoTab a.locked.active:after,.infoTab a.locked:hover:after{
 	background: url(../images/lock.png) no-repeat;
+}
+/* 富文本背景 */
+.edui-container .edui-editor-body{
+	background-color: #6C737F !important;
+}
+.edui-container .edui-toolbar{
+	box-shadow: none !important;
+}
+.edui-container{
+	box-shadow: none !important;
+}
+/* 弹窗 */
+.messageMask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	z-index: 999;
+}
+.maskCenter{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 360px;
+	background-color: #5F6877;
+	padding: 0 20px;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.closeBtn{
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+.wid210{
+	width: 210px;
+}
+.wid100px{
+	width: 100px;
+}
+.sureBtn,.cancelBtn{
+	color: #fff;
+	width: 60px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	border-radius: 2px;
+	margin: 0 30px;
+	cursor: pointer;
+}
+.cancelBtn{
+	line-height: 18px;
+	border: 1px solid #fff;
+}
+/* .cancelBtn:hover{
+    color: #3F4754;
+}
+.cancelBtn:active{
+    color: #4C525C;
+} */
+.maskText{
+	width: 300px;
+	margin: auto;
+	height: 114px;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid #909CAF;
 }

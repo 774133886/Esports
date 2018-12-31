@@ -64,20 +64,145 @@
 
 				<!-- tab -->
 				<div class="infoTab clearfix">
-					<a href="javascript:;">对阵</a>
+					<a class="active" href="javascript:;">对阵</a>
 					<a href="javascript:;">第一阶段</a>
 					<a href="javascript:;">第二阶段</a>
 					<a href="javascript:;">参数者</a>
 					<a href="javascript:;">日志（4）</a>
 					<!-- 不能设置： locked，可设置： lock -->
-					<a class="active lock" href="javascript:;">设置</a>
+					<a class="lock" href="javascript:;">设置</a>
 					<a href="javascript:;">总排行榜</a>
 				</div>
+
+				<!-- 弹窗 -->
+				<!-- 轮次信息配置 -->
+				<!-- <div class="messageMask">
+					<div class="maskCenter color-fff">
+						<img class="closeBtn" src="../images/close.png" alt="">
+						<h3 class="font16 p-v-10 m-b-10">轮次信息配置</h3>
+						<div class="curInputBox clearfix">
+							<span class="fl wid100px font14 l-h-32 color-fff relative">轮次名称</span>
+							<input class="curInput bg-input placeholder999 fl wid210 color-fff" type="text" datavalue="第一轮" placeholder="第一轮">
+						</div>
+						<div class="curInputBox clearfix m-t-10">
+							<span class="fl wid100px font14 l-h-32 color-fff relative">轮次开始时间</span>
+							<div class="selectBox fl">
+								<input class="curInput bg-input placeholder999 wid210 color-fff font14" type="text" readonly="readonly" datavalue="选择时间" placeholder="选择时间" name="start_time" autocomplete="off" id="d4311" onclick="WdatePicker({el:this,maxDate:'#F{$dp.$D(\'d4312\')}',dateFmt:'yyyy/MM/dd HH:mm'})">
+								<img class="icon-select" src="../images/triangle.png"/>
+							</div>
+						</div>
+						<div class="curInputBox clearfix m-t-10">
+							<span class="fl wid100px font14 l-h-32 color-fff relative">轮次结束时间</span>
+							<div class="selectBox fl">
+								<input class="curInput bg-input placeholder999 wid210 color-fff font14" type="text" readonly="readonly" datavalue="选择时间" placeholder="选择时间" name="end_time" autocomplete="off" id="d4312" onclick="WdatePicker({el:this,minDate:'#F{$dp.$D(\'d4311\')}',dateFmt:'yyyy/MM/dd HH:mm'})">
+								<img class="icon-select" src="../images/triangle.png"/>
+							</div>
+						</div>
+						<div class="m-t-30 text-center m-b-20">
+							<button class="button2 sureBtn">确定</button>
+							<button class="cancelBtn">取消</button>
+						</div>
+					</div>
+				</div> -->
+				<!-- 查看轮次信息 -->
+				<!-- <div class="messageMask">
+					<div class="maskCenter color-fff">
+						<img class="closeBtn" src="../images/close.png" alt="">
+						<h3 class="font16 p-v-10 m-b-10">查看轮次信息</h3>
+						<div class="curInputBox clearfix">
+							<span class="fl wid100px font14 l-h-32 color-fff relative">轮次名称</span>
+							<p class="fl font14 l-h-32 color-fff m-l-10">第一场</p>
+						</div>
+						<div class="curInputBox clearfix">
+							<span class="fl wid100px font14 l-h-32 color-fff relative">轮次开始时间</span>
+							<p class="fl font14 l-h-32 color-fff m-l-10">2018/12/21 15:00:00</p>
+						</div>
+						<div class="curInputBox clearfix m-b-20">
+							<span class="fl wid100px font14 l-h-32 color-fff relative">轮次结束时间</span>
+							<p class="fl font14 l-h-32 color-fff m-l-10">2018/12/21 15:00:00</p>
+						</div>
+					</div>
+				</div> -->
+				<!-- 交换分组 -->
+				<!-- <div class="messageMask">
+					<div class="maskCenter color-fff">
+						<img class="closeBtn" src="../images/close.png" alt="">
+						<h3 class="font16 p-v-10 m-b-10">交换分组</h3>
+						<div class="curInputBox clearfix">
+							<span class="fl wid100px font14 l-h-32 color-fff relative">交换小组</span>
+							<div class="wid210 inline_div fl">
+								<select-ui :list="list" v-on:enlarge-text="value = $event"></select-ui>
+							</div>
+						</div>
+						<div class="curInputBox clearfix m-t-10">
+							<span class="fl wid100px font14 l-h-32 color-fff relative">组内队伍</span>
+							<div class="wid210 inline_div fl">
+								<select-ui :list="list" v-on:enlarge-text="value = $event"></select-ui>
+							</div>
+						</div>
+						<div class="m-t-30 text-center m-b-20">
+							<button class="button2 sureBtn">确定</button>
+							<button class="cancelBtn">取消</button>
+						</div>
+					</div>
+				</div> -->
+				
+				<!-- 结束确认 -->
+				<!-- <div class="messageMask">
+					<div class="maskCenter color-fff">
+						<img class="closeBtn" src="../images/close.png" alt="">
+						<h3 class="font16 p-v-10 m-b-10">查看轮次信息</h3>
+						<div class="p-v-20 text-center">
+							您确认要结束本轮比赛吗？
+						</div>
+						<div class="m-t-30 text-center m-b-20">
+							<button class="button2 sureBtn">确定</button>
+							<button class="cancelBtn">取消</button>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- 下一轮信息 -->
+				<!-- <div class="messageMask">
+					<div class="maskCenter color-fff">
+						<img class="closeBtn" src="../images/close.png" alt="">
+						<h3 class="font16 p-v-10">下一轮信息确认及用户推送</h3>
+						<div class="p-v-20 text-center">
+							<textarea class="maskText curTextarea"></textarea>
+						</div>
+						<div class="text-center m-b-20">
+							<button class="button2 sureBtn">确定</button>
+							<button class="cancelBtn">取消</button>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- 上传赛果 -->
+				<!-- <div class="messageMask">
+					<div class="maskCenter color-fff">
+						<img class="closeBtn" src="../images/close.png" alt="">
+						<h3 class="font16 p-v-10 m-b-10">上传赛果</h3>
+						<div class="curInputBox clearfix">
+							<span class="fl wid70px font14 l-h-32 color-fff relative m-l-30 m-r-20">PSG.LGD</span>
+							<input class="curInput bg-input placeholder999 fl wid160 color-fff" type="text" datavalue="" placeholder="">
+						</div>
+						<div class="curInputBox clearfix m-t-10">
+							<span class="fl wid70px font14 l-h-32 color-fff relative m-l-30 m-r-20">EHOME</span>
+							<input class="curInput bg-input placeholder999 fl wid160 color-fff" type="text" datavalue="" placeholder="">
+						</div>
+						<div class="m-t-30 text-center m-b-20">
+							<button class="button2 sureBtn">确定</button>
+							<button class="cancelBtn">取消</button>
+						</div>
+					</div>
+				</div> -->
+
 			</div>
 		</div>
 	</body>
 	<script type="text/javascript" src="../lib/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="../lib/vue.js"></script>
+	<script language="javascript" type="text/javascript" src="../lib/My97DatePicker/WdatePicker.js"></script>
 	<script type="text/javascript" src="../lib/global.js"></script>
 	<script>
 		var app = new Vue({
