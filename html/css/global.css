@@ -31,16 +31,12 @@ body{word-wrap:break-word;font-size:14px;color:#000;line-height:1.5;font-family:
 .swiper-slide{display: inline-block;width: 100%;float: none!important;height: auto!important;}
 
 /*****使用REM作为尺寸单位，媒体查询不同分辨率的浏览器设置相应根字号*****/
-html{font-size:32px;-webkit-user-select:none;user-select:none}
-/*@media only screen and (min-width:320px){html{font-size:32px!important}}
-@media only screen and (min-width:360px){html{font-size:36px!important}}
-@media only screen and (min-width:375px){html{font-size:38px!important}}
-@media only screen and (min-width:414px){html{font-size:41px!important}}*/
-
-@media only screen and (min-width:320px){html{font-size:50px!important}}
-@media only screen and (min-width:360px){html{font-size:56px!important}}
-@media only screen and (min-width:375px){html{font-size:60px!important}}
-@media only screen and (min-width:414px){html{font-size:64px!important}}
+html{font-size:62.5%}
+@media screen and (min-width:375px){html{font-size:73.24%}}
+@media screen and (min-width:414px){html{font-size:73.24%}}
+@media screen and (min-width:481px){html{font-size:94%}}
+@media screen and (min-width:561px){html{font-size:109%}}
+@media screen and (min-width:641px){html{font-size:125%}}
 
 /*"暂无信息"的样式*/
 .no_data {position: absolute; top: 30%; text-align: center;display: none;-webkit-animation:delay_show 2s;animation:delay_show 1.5s;}

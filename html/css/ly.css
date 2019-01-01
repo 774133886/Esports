@@ -266,3 +266,229 @@
 .allGameFilter>li:hover{
 	background: #909CAF;
 }
+
+/*对阵图*/
+.matchTop{
+	width: 100%;
+	padding: 40px 0;
+}
+.roundArea{
+	width: 240px;
+	height: 100px;
+	background: #4C525C;
+	border-radius: 2px;
+}
+.roundBtn{
+	width: 180px;
+	height: 32px;
+	border-radius: 2px;
+	color: #fff;
+	font-size:16px ;
+}
+.l-h-100{
+	line-height: 100px;
+}
+.p-t-55{
+	padding-top: 55px;
+}
+.iconText{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/edit.png);
+	background-repeat: no-repeat;
+	background-size: 10px 10px;
+	background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*leagueStyle.html 赛事改  TGL 2018.12.10*/
+.league p:first-child{background:url(../images/sectangle.png) no-repeat left center;line-height:2.7rem;padding:1.1rem 0 1.1rem 0.5rem;background-size:0.35rem;}
+.league p:first-child select{outline:none;-webkit-appearance:none;background:#333A44 url(../images/Triangle@2x.png) no-repeat right center;color:#fff;border:0;padding:0 1.9rem 0 0.9rem;background-size:1.1rem;}
+.league_drag{overflow:hidden;}
+.league_ul{
+	overflow-x:scroll;
+	overflow-y:hidden;
+	-webkit-overflow-scrolling:touch;
+}
+.league_ul::-webkit-scrollbar{display:none;}
+.league_ul::-webkit-scrollbar-track{background:#333A44;-webkit-border-radius:0.1rem;-moz-border-radius:0.1rem;border-radius:0.1rem;}
+.league_ul::-webkit-scrollbar-thumb{background:#333A44;-webkit-border-radius:0.1rem;-moz-border-radius:0.1rem;border-radius:0.1rem;}
+/*.league_ul li .war_wrap{position:relative;}*/
+.league_ul li .war_wrap div{
+
+	/*padding:1.1rem 10% 1.1rem 0;*/
+
+	}
+.league_ul li .war_wrap div:first-child{padding-bottom:0;}
+.league_ul li .war_wrap div label{
+	display:block;
+	width:190px;
+	text-align:center;
+	color:#fff;
+	position:relative;
+	margin-bottom:20px;
+}
+.league_ul li .war_wrap div label:first-child{
+	width: 18px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 73px;
+	
+	}
+.league_ul li .war_wrap div label span{
+	position:relative;
+	display:block;
+	background:#4C525C;
+	height:35px;
+	line-height:35px;
+	color:#fff;
+	font-size:14px;
+	padding:0 15%;
+	width:180px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.league_ul li .war_wrap div label span:first-child{
+	margin-bottom: 3px;
+}
+.league_ul li .war_wrap div label span img{
+	width:26px;
+	height:26px;
+	position:absolute;
+	left:6px;
+	top:5px;
+}
+.league_ul li .war_wrap div label span i{
+	position:absolute;
+	right:0;
+	top:0;
+	height: 35px;
+	width: 30px;
+	color:#fff;
+	font-size:16px;
+	line-height:35px;
+	display:block;
+}
+/*.zl_down{
+	background:url(../images/danbai_zl_down.png) no-repeat right bottom;
+	background-size:22px 45px;
+}*/
+.zl_down:before{
+	content: '';
+	background-image: url(../images/danbai_zl_down.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	top: 37px;
+	width: 22px;
+	height: 45px;
+}
+.zl_up:before{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -12px;
+	background-image: url(../images/danbai_zl_up.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 22px;
+	height: 50px;
+}
+/*长线*/
+.classTgl .zl_down:before{
+	content: '';
+	background-image: url(../images/long_line_top.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	top: 34px;
+	width: 22px;
+	height: 96px;
+} 
+.classTgl .zl_up:before{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -57px;
+	background-image: url(../images/long_line_bottom.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 22px;
+	height: 95px;
+}
+
+.league_ul li{
+	display:block;
+	width:100%;
+	width: 225px;
+	position:relative;
+	padding:90px 0;
+}
+.league_ul li .leaguePine{
+	position:absolute;left:0;top:0;color:#fff;
+	text-align:center;width:220px;
+	height: 56px;
+	line-height: 56px;
+	font-size: 14px;
+	text-align: center;
+	background: #4C525C;
+}
+
+
+.league_ul li.classTgl{
+	/*padding-left:1rem;*/
+}
+.league_ul li.classTgl .war_wrap{
+	padding: 46px 0px;
+}
+.league_ul li.classTgl3 .war_wrap{
+	padding: 138px 0px;
+}
+.league_ul li.classTgl .war_wrap div{
+	padding-top:0;
+	height:100%;
+}
+.league_ul li:last-child .war_wrap>.clearfix:before{
+	display: none;
+}
+.bg-suc{
+	background: #7188B1 !important;
+}
+.emalaaa div{background:url(../images/danbai_sss.png) no-repeat 96% 49.3%;background-size:2.1rem 0.1rem;}
+.war_wrap label>span:hover{
+	background: #909CAF !important;
+}
+.leaguePine:hover{
+	background: #5F6877 !important;
+}
+.matchBox{
+	position: absolute;
+	right: -63px;
+	top: 0;
+	width: 73px;
+	height: 73px;
+	opacity: 0.8;
+	background: #151E29;
+	z-index: 1;
+}
